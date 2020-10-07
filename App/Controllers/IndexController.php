@@ -1,14 +1,15 @@
 <?php
 
 	namespace App\Controllers;
+	use MF\Controller\Action;
 
-	class IndexController {
+	class IndexController extends Action {
 		public function index() {
-			echo 'Chegamos ao index controller e disparamos a action index';
+			$this->render("index", "layout1");
 		}
 
 		public function sobreNos() {
-			echo 'Chegamos ao index controller e disparamos a action sobre nos';
+			$this->render("sobreNos", "layout1");
 		}
 	}
 
