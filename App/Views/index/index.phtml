@@ -2,5 +2,7 @@
 <hr />
 
 <?php
-	echo 'Chegamos ao index controller e disparamos a action index';
+	foreach ($this->view->dados as $indice => $produto) {
+		echo $produto['id']. ' - ' .$produto['descricao']. ' - ' .$produto['preco']. '</br>';
+	}
 ?>

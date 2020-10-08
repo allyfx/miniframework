@@ -2,5 +2,7 @@
 <hr />
 
 <?php
-	echo 'Chegamos ao index controller e disparamos a action sobre nos';
+	foreach ($this->view->dados as $indice => $info) {
+		echo $info['titulo']. ' - ' .$info['descricao']. '</br>';
+	}
 ?>
